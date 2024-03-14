@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;
+    400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+    6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQ
+    eAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&family=Rubik+Wet+Paint&family=Send+Flowers&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Jost', sans-serif;
+        list-style: none;
+        text-decoration: none;
+    }  
+    header{
+        position:absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        max-height: 85px;
+    }
+   /* body{
+    	background-color: black;
+    }*/
+    .logo img{
+        max-width: 300px;
+        height: auto;
+    
+    }
+    .navmenu{
+        display: flex;
+        padding-right: 8%;
+        
+    }
+    .navmenu a{
+        color: white;
+        font-size: 14px;
+        padding: 10px 20px;
+        font-weight: 200;
+        position: relative;
+       
+    }
+    .navmenu a:after{
+        content: "";
+        background-color: antiquewhite;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .navmenu a:hover::after{
+        width: 100%;        
+    }
+    .main-home{
+        width: 100%;
+        height: 80vh;
+        background: linear-gradient(to right, rgb(0 0 0 / 0.9),
+            rgb(0 0 0 / 0)),
+        linear-gradient(to left, rgb(0 0 0 / 0.9),
+            rgb(0 0 0 / 0)),
+        url('https://img.freepik.com/premium-photo/abstract-background-restaurant-concept-blurred-background-evening-food-fork-knife-cutlery-table-setting_548821-3460.jpg');
+        background-position: center;
+        background-color: #666;
+        background-size: cover;
+        position: sticky;
+        opacity: 0.9;
+        z-index: -1;
+        padding: 5% 32%;
+        opacity: 1;
+        background-repeat: no-repeat;
+    }
+    
+    .main-btn{
+    	margin-top: 30px;
+        padding-left: 500px;
+    }
+    .main-btn .btn-1{
+        width: 250px;
+        height: 50px;
+        border-radius: 45px;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: transparent;
+        font-size: 16px;
+        position: relative;
+        bottom: 220px;
+        color: white;
+    }   
+    .main-btn .btn-1:hover{
+        background-color: white;
+        color: black;
+        transition: .6s;
+        font-weight: 500px;
+    }
+    .center-text h2{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .foto img{
+        width: 500px;
+        height: 250px;
+        display: inline-block;
+        position: relative;
+        right: -16%;
+        padding: 10px;
+    }
+    .menu-res h4 h5{
+        position: absolute;
+        display: inline-block;
+        justify-content: center;
+        padding: 40px;
+        font-size: 20px;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        width: 500px;
+        height: 250px;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 1;
+        transition: 0.6s;
+    }
+    a{
+        position: relative;
+        top: 100%;
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+    .wrapper:hover a{
+        top: 0;
+    }
+    .content h3{
+        font-size: 25px;
+        color: white;
+        margin-bottom: 15px;
+    }
+    .content .btn-2 {
+        width: 120px;
+        height: 50px;
+        border-radius: 40px;
+        background: transparent;
+        border-color: white;
+        color: white;
+    }
+    .content  > *{
+        transform: translateY(25px);
+        transition: transform 0.6s;
+    }
+    .content:hover > *{
+        transform: translateY(0px);
+    }
+    .mini{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .mini .wrapper{
+        padding: 15px;
+        overflow: hidden;
+    }
+    .reviews h3{
+        padding-top: 30px;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .customers-reviews1{
+        width: 980px;
+        height: 220px;
+        background-color: antiquewhite;
+        float: right;
+        margin-right: 100px;
+        position: relative;
+        top: 40px;
+        padding: 65px;
+        line-height: 24px;
+        
+            }
+    .customers-reviews1::before{
+        content: open-quote;
+        font-size: 70px;
+        position: absolute;
+        top: 50px;
+    }
+    .customers-reviews1 h5{
+        float: right;
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .customers-reviews2{
+        width: 980px;
+        height: 220px;
+        background-color: white;
+        margin-left: 100px;
+        position: absolute;
+        margin-top: 340px;
+        padding: 65px;
+        line-height: 24px;
+
+    }
+    .customers-reviews2::before{
+        content: close-quote;
+        font-size: 70px;
+        position: absolute;
+        top: 50px;
+    }
+    .customers-reviews2 h5{
+        float: right;
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .customers{
+        background-color: #DCDCDC;
+        position: relative;
+        height: 800px;
+    }
+    .customers img{
+        width: 100px;
+        height: 100px;
+    }
+    .foto-1{
+        position: relative;
+        float: left;
+        top: 50px;
+        left: 330px;
+        border-radius: 50%;
+    }
+    .foto-2{
+        position: relative;
+        float: right;
+        top: 350px;
+        left:750px ;
+        right: auto;
+        border-radius: 50%;
+    }
+
+    .footer{
+        margin-top: 50px;
+    }
+    .footer .box-container{
+        display:grid ;
+        grid-template-columns:  repeat(auto-fit, minmax(20rem, 1fr));
+        gap:1.5rem;
+    }
+    .footer .box-container .box h3{
+        padding: .5rem 0;
+        font-size: 1.2rem;
+        color: var(--black);
+        text-align: center;
+    }
+    .box{
+        height: 0;
+    }
+    .footer .box-container .box a{
+        display: block;
+        padding: .3rem 0;
+        font-size: 1rem;
+        color: var(--light-color);
+        text-align: center;
+    }
+    .footer .box-container .box a:hover{
+        color: var(--green);
+        text-decoration: underline;
+    }
+    .footer .credit{
+        text-align: center;
+        border-top: 2px solid rgba(0,0,0,.1); 
+        font-size: 1.5rem;
+        padding: .5rem;
+        padding-top: 1.5rem;
+        margin-top: 12rem;
+    }
+    .uluttuk{
+    	margin-top: 150px;
+    	width: 700px;
+    }
+    .h1{
+	position: absolute;
+	font-size: 100px;
+	color: #fff;
+	left: 350px;
+	margin-top: 40px;
+	font-family: 'Rubik Microbe', cursive;
+	font-weight: 500;
+
+}
+</style>
+<body>
+    <header class="sticky">
+    	<a href="#" class="logo "><img src="./images/logotip.png" alt="salam"></a>
+        <ul class="navmenu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Меню ресторана</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+      </header>
+
+  <section class="main-home">
+   <h1 class="h1">Улуттук даам</h1>
+</section>
+<div class="main-btn">
+    <a href="#"><button class="btn-1">Доставка</button></a>
+  <a href="#"><button class="btn-1">Забронировать</button></a> 
+</div>
+
+
+<section class="menu-res">
+    <div class="center-text">
+        <h2>
+            Меню ресторан
+        </h2>
+    </div>
+</section>
+
+    <section class="mini"> 
+    <div class="wrapper">
+        <div class="image">
+                <img class="image" src="./images/Закуска.jpg" alt="">
+                <div class="content">
+                    <h3>Закуски</h3>
+               <a href="MenuDaam.html#menu-1"><button class="btn-2">Перейти</button></a>
+            </div>
+        </div>
+    </div>
+      
+    <div class="wrapper">
+        <div class="image">
+                <img class="image" src="./images/Салаты.jpg" alt="">
+                <div class="content">
+                    <h3>Салаты</h3>
+                <a href="MenuDaam.html#menu-2"><button class="btn-2">Перейти</button></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="mini">
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="./images/супы.jpg" alt="">
+                    <div class="content">
+                        <h3>Супы</h3>
+                    <a href="MenuDaam.html#menu-3"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+          
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="./images/суши.jpg" alt="">
+                    <div class="content">
+                        <h3>Суши</h3>
+                    <a href="MenuDaam.html#menu-4"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mini">
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=1060&t=st=1702116672~exp=1702117272~hmac=d6d1159c3f99da752575429a419ea84a57b5827389d642530e063f14ddb12398" alt="">
+                    <div class="content">
+                        <h3>Пицца</h3>
+                    <a href="MenuDaam.html#menu-5"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+          
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="./images/Лапша.jpg" alt="">
+                    <div class="content">
+                        <h3>Рис и лапша</h3>
+                    <a href="MenuDaam.html#menu-6"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mini">
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="./images/шаш.jpg" alt="">
+                    <div class="content">
+                        <h3>Шашлычки</h3>
+                    <a href="MenuDaam.html#menu-7"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+          
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="./images/мор.jpg" alt="">
+                    <div class="content">
+                        <h3>Рыба и краб</h3>
+                    <a href="MenuDaam.html#menu-8"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mini">
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="./images/Десерты.jpg" alt="">
+                    <div class="content">
+                        <h3>Десерты</h3>
+                    <a href="MenuDaam.html#menu-9"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+          
+        <div class="wrapper">
+            <div class="image">
+                    <img class="image" src="./images/напи.jpg" alt="">
+                    <div class="content">
+                        <h3>Напитки</h3>
+                    <a href="MenuDaam.html#menu-10"><button class="btn-2">Перейти</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="customers">
+    <div class="reviews">
+        <h3>Отзывы клиентов</h3>
+    </div>
+    <img class="foto-1" src="./sabyr3.jpeg">
+    <div class="customers-reviews1">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+        <h5>Mametov Omurbek</h5>
+    </div>
+    
+    <div class="customers-reviews2">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+        <h5>Omurbek Mametov</h5>
+    </div>
+    
+    <img class="foto-2" src="./sabyr4.jpeg">
+</section>
+<br>
+<br>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Локация</h3>
+            <a href="#">Бишкек</a>
+            <a href="#">Ош</a>
+            <a href="#">Чуй</a>
+            <a href="#">Жалал-абад</a>
+            <a href="#">Баткен</a>
+        </div>
+
+        <div class="box">
+            <h3>Быстрые ссылки</h3>
+            <a href="#">Главная</a>
+            <a href="#">Меню</a>
+            <a href="#">Обзор</a>
+            <a href="#">Заказ</a>
+            <a href="#">Бронь</a>
+        </div>
+
+        <div class="box">
+            <h3>Контакт</h3>
+            <a href="#">+996 502-02-87-12</a>
+            <a href="#">+996 778-06-45-35</a>
+            <a href="#">UluttukDaam@gmail.com</a>
+            <a href="#">turdukulovsabyrbek@gmail.com</a>
+            <a href="#">OshTU</a>
+        </div>
+
+        <div class="box">
+            <h3>Мы в социальных сетях</h3>
+            <a href="#">Инстаграм</a>
+            <a href="#">Тикток</a>
+            <a href="#">Фейсбук</a>
+            <a href="#">Твиттер</a>
+            <a href="#">Телеграм</a>
+        </div>
+    </div>
+</section>
+<hr>
+</body>
+</html>

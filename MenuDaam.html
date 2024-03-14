@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+</head>
+	<style>
+		 body{
+		 	padding: 0;
+		 	margin: 0;
+		 }
+		.sticky{
+			width: 100%;
+			height: 250px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background: linear-gradient(to right, rgb(0 0 0 / 0.8),
+            rgb(0 0 0 / 0)),
+        	linear-gradient(to left, rgb(0 0 0 / 0.8),
+            rgb(0 0 0 / 0)),
+        	url('https://fonoteka.top/uploads/posts/2022-02/1644356170_32-phonoteka-org-p-fon-dlya-blyud-34.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 1;
+		}
+		.sticky h1{
+			padding-right: 460px;
+			font-size: 50px;
+			font-weight: 500;
+			font-family: Arial;
+			color: white;
+		}
+		.sticky button{
+			width: 220px;
+			height: 50px;
+			margin-left: 20px;
+			border-radius: 30px;
+			background: transparent;
+			color: white;
+			font-size: 16px;
+			border-color: white;
+		}
+		.sticky button:hover{
+			background: white;
+			color: black;
+			transition:  .6s ease;
+		}
+		.text-1 h3{
+			text-align: center;
+			font-size: 30px;
+			font-weight: 500;
+			font-family: Arial;
+		}
+		.text-1{
+			width: 100%;
+		}
+		.Menu{
+			display: grid;
+       		grid-template-columns: repeat(auto-fit, minmax(295px, auto));
+        	gap: 1rem;
+        	justify-content: center;
+		}
+		.image-1 img{
+			width: 365px;
+			height: 365px;	
+		}
+		.text-2{
+			text-align: center;
+			font-weight: 400px;
+			font-size: 15px;
+			font-family: Arial, sans-serif;
+		} 
+		.text-2 button{
+			width: 150px;
+			height: 40px;
+			border-radius: 30px;
+			background: transparent;
+		}
+		.text-2 button:hover{
+			background: black;
+			color: white;
+			transition:  .6s ease;
+		
+		}
+		.image p{
+			position: ;
+		}
+		.footer{
+        margin-top: 50px;
+	    }
+	    .footer .box-container{
+	        display:grid ;
+	        grid-template-columns:  repeat(auto-fit, minmax(20rem, 1fr));
+	        gap:1.5rem;
+	    }
+	    .footer .box-container .box h3{
+	        padding: .5rem 0;
+	        font-size: 1.2rem;
+	        color: var(--black);
+	        text-align: center;
+	    }
+	    .box{
+	        height: 0;
+	    }
+	    .footer .box-container .box a{
+	        display: block;
+	        padding: .3rem 0;
+	        font-size: 1rem;
+	        color: var(--light-color);
+	        text-align: center;
+	    }
+	    .footer .box-container .box a:hover{
+	        color: var(--green);
+	        text-decoration: underline;
+	    }
+	    .footer .credit{
+	        text-align: center;
+	        border-top: 2px solid rgba(0,0,0,.1); 
+	        font-size: 1.5rem;
+	        padding: .5rem;
+	        padding-top: 1.5rem;
+	        margin-top: 12rem;
+	    }
+	</style>
+<body>
+	<section class="sticky">
+		<h1>Меню</h1>
+		<button>Доставка</button>
+		<button>Забронировать</button>
+	</section>
+
+			<div class="text-1">
+				<h3 id="menu-1">Закуски</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/сыром и овощами.jpg">
+			<div class="text-2">
+			<p>Сыром и овощами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/нарезанным хлебом сверху томатный салат и руккола.jpg">
+			<div class="text-2">
+			<p>Хлебом сверху томатный салат и руккола</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/рулет из лаваша.jpg">
+			<div class="text-2">
+			<p>Рулет из лаваша</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/белый и козий сыр с ломтиками оливок.jpg">
+			<div class="text-2">
+			<p>Белый и козий сыр с ломтиками оливок</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/овощами.jpg">
+			<div class="text-2">
+			<p>Овощами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/кейтеринг канапе антипасто.jpg">
+			<div class="text-2">
+			<p>Кейтеринг канапе антипасто</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/брускетты.jpg">
+			<div class="text-2">
+			<p>Брускетты</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/брускетта с сыром, вялеными томатами и базиликом.jpg">
+			<div class="text-2">
+			<p>Брускетта с сыром,томатами и базиликом</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="text-1">
+				<h3 id="menu-2">Салаты</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/овощной салат с белым сыром.jpg">
+			<div class="text-2">
+			<p>Овощной салат с белым сыром</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/плоский салат с курицей и кунжутом.jpg">
+			<div class="text-2">
+			<p>Плоский салат с курицей и кунжутом</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/салат из соленого лосося с зеленью, огурцами, яйцами.jpg">
+			<div class="text-2">
+			<p>Cоленого лосося с зеленью, огурцами, яйцами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Салаты.jpg">
+			<div class="text-2">
+			<p>Салат винегрет на сером</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Веганская паста.jpg">
+			<div class="text-2">
+			<p>Веганская паста</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Салат под высоким углом с жареным яйцом.jpg">
+			<div class="text-2">
+			<p>Салат под высоким углом с жареным яйцом</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/веганские тако с гуакамоле, нутом, помидорами и рукколой..jpg">
+			<div class="text-2">
+			<p>Веганские тако с гуакамоле, нутом, помидорами.</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/черникой, сыром, орехами и рукколой.jpg">
+			<div class="text-2">
+			<p>Черникой, сыром, орехами и рукколой</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>	
+
+
+	<div class="text-1">
+				<h3 id="menu-3">Супы</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/суп с зеленью.jpg">
+			<div class="text-2">
+			<p>Суп с зеленью</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/суп с лапшой.jpg">
+			<div class="text-2">
+			<p>Суп с лапшой</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/суп из квашеной капусты.jpg">
+			<div class="text-2">
+			<p>Суп из квашеной капусты</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/суп кимчи.jpg">
+			<div class="text-2">
+			<p>Суп кимчи</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="text-1">
+				<h3 id="menu-4">Суши</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/суши-роллы на подносе с имбирем и васаби.jpg">
+			<div class="text-2">
+			<p>Суши-роллы на подносе с имбирем и васаби</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Суши-роллы.jpg">
+			<div class="text-2">
+			<p>Суши-роллы</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/суши-роллы, завернутые в лосось.jpg">
+			<div class="text-2">
+			<p>Суши-роллы, завернутые в лосось</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Суши-сет со сливками и соусом.jpg">
+			<div class="text-2">
+			<p>Суши-сет со сливками и соусом</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="text-1">
+				<h3 id="menu-5">Пицца</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/пицца с начинкой из помидоров, салями и оливок.jpg">
+			<div class="text-2">
+			<p>Пицца с начинкой из помидоров, салями и оливок</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/хрустящая смешанная пицца с оливками и колбасой.jpg">
+			<div class="text-2">
+			<p>Пицца с оливками и колбасой</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/пиццы с помидорами, маслинами и плавленым сыром.jpg">
+			<div class="text-2">
+			<p>Помидорами, маслинами и плавленым сыром</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/соусом песто и яйцами.jpg">
+			<div class="text-2">
+			<p>Соусом песто и яйцами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="text-1">
+				<h3 id="menu-6">Рис и лапша</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/азиатская лапша рамэн.jpg">
+			<div class="text-2">
+			<p>Азиатская лапша рамэн</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Фунчоза,китайская лапша со специями и мясом.jpg">
+			<div class="text-2">
+			<p>Фунчоза,китайская лапша со специями и мясом</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Азиатский суп с лапшой и овощами.jpg">
+			<div class="text-2">
+			<p>Азиатский суп с лапшой и овощами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/домашняя лапша удон японской кухни.jpg">
+			<div class="text-2">
+			<p>Домашняя лапша удон японской кухни</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="text-1">
+				<h3 id="menu-7">Шашлычки</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/жареное мясо с гранатом и соусом.jpg">
+			<div class="text-2">
+			<p>Жареное мясо с гранатом и соусом</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/кебаб с бараниной и куриным люля и тикка-кебабами.jpg">
+			<div class="text-2">
+			<p>Бараниной и куриным люля и тикка-кебабами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/шашлыком и помидорами.jpg">
+			<div class="text-2">
+			<p>Шашлыком и помидорами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/шашлык на шампурах с помидорами.jpg">
+			<div class="text-2">
+			<p>Шашлык на шампурах с помидорами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="text-1">
+				<h3 id="menu-8">Морепродукты</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/рыба жареные баклажаны лук перец.jpg">
+			<div class="text-2">
+			<p>Рыба жареные баклажаны лук перец</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/свежая рыба с приправами и луковыми кольцами.jpg">
+			<div class="text-2">
+			<p>Свежая рыба с приправами и луковыми кольцами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/лобстер и специи.jpg">
+			<div class="text-2">
+			<p>Лобстер и специи</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Вкусные приготовленные морепродукты.jpg">
+			<div class="text-2">
+			<p>Вкусные приготовленные морепродукты</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="text-1">
+				<h3 id="menu-9">Десерты</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/десерт клубничный крем и фрукты.jpg">
+			<div class="text-2">
+			<p>Десерт клубничный крем и фрукты</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/чизкейка с ягодами.jpg">
+			<div class="text-2">
+			<p>Чизкейка с ягодами</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/шоколад и изобилие ягод.jpg">
+			<div class="text-2">
+			<p>Шоколад и изобилие ягод</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/спереди вкусного ассортимента десертов.jpg">
+			<div class="text-2">
+			<p>Спереди вкусного ассортимента десертов</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/разнообразных кусочков торта.jpg">
+			<div class="text-2">
+			<p>Разнообразных кусочков торта</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/вкусных шоколадных кексов с малиной.jpg">
+			<div class="text-2">
+			<p>Вкусных шоколадных кексов с малиной</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/чизкейк с клубничным кремом и джемом.jpg">
+			<div class="text-2">
+			<p>Чизкейк с клубничным кремом и джемом</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/кусочек чизкейка с клубникой и листьями мяты.jpg">
+			<div class="text-2">
+			<p>Кусочек чизкейка с клубникой и листьями мяты</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="text-1">
+				<h3 id="menu-10">Напитки</h3>
+			</div>
+	<section class="Menu">
+		
+		<div class="image-1">
+			<img src="./images/Вкусный холодный свежий лимонад с малиной, мятой.jpg">
+			<div class="text-2">
+			<p>Вкусный холодный свежий лимонад с малиной</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Детокс-вода с арбузом и мятой.jpg">
+			<div class="text-2">
+			<p>Детокс-вода с арбузом и мятой</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/Хлеб Насущный.jpeg">
+			<div class="text-2">
+			<p>Хлеб Насущный</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+
+		<div class="image-1">
+			<img src="./images/чай.jpg">
+			<div class="text-2">
+			<p>Чай</p>
+			<p>550руб</p>
+			<button>Добавить в корзину</button>
+			</div>
+		</div>
+	</section>
+	<br>
+	<br>
+	<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Локация</h3>
+            <a href="#">Бишкек</a>
+            <a href="#">Ош</a>
+            <a href="#">Чуй</a>
+            <a href="#">Жалал-абад</a>
+            <a href="#">Баткен</a>
+        </div>
+
+        <div class="box">
+            <h3>Быстрые ссылки</h3>
+            <a href="#">Главная</a>
+            <a href="#">Меню</a>
+            <a href="#">Обзор</a>
+            <a href="#">Заказ</a>
+            <a href="#">Бронь</a>
+        </div>
+
+        <div class="box">
+            <h3>Контакт</h3>
+            <a href="#">+996(500-037-618)</a>
+            <a href="#">+996(779-899-225)</a>
+            <a href="#">restourant@gmail.com</a>
+            <a href="#">myrzaevbaiel@gmail.com</a>
+            <a href="#">Юг-Восток</a>
+        </div>
+
+        <div class="box">
+            <h3>Мы в социальных сетях</h3>
+            <a href="#">Инстаграм</a>
+            <a href="#">Тикток</a>
+            <a href="#">Фейсбук</a>
+            <a href="#">Твиттер</a>
+            <a href="#">Телеграм</a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
